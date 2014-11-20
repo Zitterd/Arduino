@@ -38,14 +38,14 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 #LINK_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
-INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
+INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code")
 
 
 
 
 project (Code)
 
-#LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
+#LINK_DIRECTORIES("C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code")
 INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
@@ -60,7 +60,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 
 
-add_executable(test.o test.c uart.c uart.h)
+add_executable(test.o test.c)
 
 
 
