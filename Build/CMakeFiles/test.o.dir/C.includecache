@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Arduino/hardware/tools/avr/avr/include/inttypes.h
+stdint.h
+-
+inttypes.h
+-
+
+C:/Arduino/hardware/tools/avr/avr/include/stdint.h
+
+C:/Arduino/hardware/tools/avr/avr/include/stdio.h
+inttypes.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdio.h
+-
+
+C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code/test.c
+stdio.h
+-
+
