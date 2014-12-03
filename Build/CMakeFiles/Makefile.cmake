@@ -75,6 +75,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Internal/FeatureTesting.cmake"
+  "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/ProcessorCount.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
