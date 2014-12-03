@@ -77,12 +77,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/ProcessorCount.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeSystem.cmake"
   "C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code/CMakeLists.txt"
+  "C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code/Toolchain-avr-gcc.cmake"
+  "C:/Users/Jonas Hamers/Documents/GitHub/Arduino/Code/macro.cmake"
   )
 
 # The corresponding makefile is:

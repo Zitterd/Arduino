@@ -1,12 +1,19 @@
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
+#INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
+#INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
+#INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
+INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/arduino/avr/cores/arduino")
+INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/arduino/avr/variants/leonardo")
 
-set(CMAKE_ARDUINO_PATH "C:/Arduino") 
+#set(CMAKE_ARDUINO_PATH "C:/Arduino") 
+set(CMAKE_ARDUINO_PATH "C:/ArduinoNEU")
+
 set(CMAKE_SYSTEM_NAME Arduino)
 
-set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+#set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+#set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_C_COMPILER   "C:/ArduinoNEU/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/ArduinoNEU/hardware/tools/avr/bin/avr-g++.exe")
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
@@ -74,7 +81,8 @@ if(NOT ARDUINO_SDK_PATH)
             /usr/local/share/arduino*)
     elseif(WIN32)
         set(SDK_PATH_HINTS 
-            "C:\\Arduino"
+            #"C:\\Arduino"
+			"C:\\ArduinoNEU"
             )
     endif()
     list(SORT SDK_PATH_HINTS)
@@ -93,8 +101,8 @@ if(ARDUINO_SDK_PATH)
     MESSAGE(STATUS "\n -------------------------------->SDK PATH:"  ${ARDUINO_SDK_PATH} )
     list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/tools/avr)
     list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/tools/avr/utils)
-	list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/arduino/cores/arduino)
-	list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/arduino/variants/standard)
+	list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/arduino/avr/cores/arduino)
+	list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH}/hardware/hardware/arduino/avr/variants/standard)
 	list(APPEND CMAKE_SYSTEM_PREFIX_PATH ${ARDUINO_SDK_PATH})
 else()
     message(FATAL_ERROR "Could not find Arduino SDK (set ARDUINO_SDK_PATH)!")
