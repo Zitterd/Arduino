@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Arduino SDK path.
+ARDUINO_SDK_PATH:PATH=C:/arduino158
+
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:UNINITIALIZED=Debug
 
@@ -27,7 +30,7 @@ CMAKE_MAKE_PROGRAM:FILEPATH=c:/MinGW/bin/mingw32-make.exe
 CMAKE_PROJECT_NAME:STATIC=hexFileErstellung
 
 //Path to a program.
-CMAKE_SH:FILEPATH=C:/Program Files (x86)/Git/bin/sh.exe
+CMAKE_SH:FILEPATH=C:/MinGW/msys/1.0/bin/sh.exe
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
