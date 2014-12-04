@@ -1,19 +1,19 @@
 #INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
 #INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
 #INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
-INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/arduino/avr/cores/arduino")
-INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/ArduinoNEU/hardware/arduino/avr/variants/leonardo")
+INCLUDE_DIRECTORIES("C:/arduino158/hardware/arduino/avr/cores/arduino")
+INCLUDE_DIRECTORIES("C:/arduino158/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/arduino158/hardware/arduino/avr/variants/leonardo")
 
 #set(CMAKE_ARDUINO_PATH "C:/Arduino") 
-set(CMAKE_ARDUINO_PATH "C:/ArduinoNEU")
+set(CMAKE_ARDUINO_PATH "C:/arduino158")
 
 set(CMAKE_SYSTEM_NAME Arduino)
 
 #set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
 #set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
-set(CMAKE_C_COMPILER   "C:/ArduinoNEU/hardware/tools/avr/bin/avr-gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/ArduinoNEU/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_C_COMPILER   "C:/arduino158/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/arduino158/hardware/tools/avr/bin/avr-g++.exe")
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
@@ -82,7 +82,7 @@ if(NOT ARDUINO_SDK_PATH)
     elseif(WIN32)
         set(SDK_PATH_HINTS 
             #"C:\\Arduino"
-			"C:\\ArduinoNEU"
+			"C:\\arduino158"
             )
     endif()
     list(SORT SDK_PATH_HINTS)
