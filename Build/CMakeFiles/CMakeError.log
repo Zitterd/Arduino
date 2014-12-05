@@ -1,0 +1,24 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Jonas/Desktop/Arduino/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec801517006\fast"
+Das System kann die angegebene Datei nicht finden
+Generator: execution of make failed. Make command was: "nmake" "/NOLOGO" "cmTryCompileExec801517006\fast"
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Jonas/Desktop/Arduino/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec368929248\fast"
+Das System kann die angegebene Datei nicht finden
+Generator: execution of make failed. Make command was: "nmake" "/NOLOGO" "cmTryCompileExec368929248\fast"
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Jonas/Desktop/Arduino/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"nmake" "/NOLOGO" "cmTryCompileExec2902563998\fast"
+Das System kann die angegebene Datei nicht finden
+Generator: execution of make failed. Make command was: "nmake" "/NOLOGO" "cmTryCompileExec2902563998\fast"
+
+
